@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Личный кабинет - Прочитанные статьи - NikitosGolubev</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="template/css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/personalCab.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/personalCab/toReadData.css" />
+	<!-- RESPONSIVITY -->
+	<link rel="stylesheet" type="text/css" href="template/css/responsivity/to932px.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/responsivity/to768_736_667px.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/responsivity/to414px.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/responsivity/to375_320px.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/responsivity/height.css" />
+</head>
+<body id='body'>
+	<div class='wrapper'>
+		<header class='cabHeaderWrapper' id='cabHeaderTab'>
+			<div class='cabHeader'>
+				<div class='logoAndCabNavBtn'>
+					<div class='cabNavBtn cabMenuVisible' id='personalCabMenuBtn'></div>
+					<div class='cabLogo'><a href='#'>NikitosGolubev</a></div>
+				</div>
+				<div class='mainMenuBtn'>
+					<div class='burger whiteBurgerOpacity'></div>
+				</div>
+			</div>
+		</header>
+		<nav id='mainMenu' class='menuWrap tab'>
+			<div class='delete'></div>
+			<div class='menu'>
+				<span class='h1 light'>Меню</span>
+				<ul class='menuList'>
+					<li><a class='activeMenuElem' href='index.html'>Главная</a></li>
+					<li><a href='articles.html'>Статьи</a></li>
+					<li><a href='reg.html' class='specialLink'>Стать особенным</a></li>
+					<li><a href='login.html' class='specialLink'>Войти</a></li>
+					<li><a href='portfolio.html'>Моё портфолио</a></li>
+					<li><a href='services.html'>Мои услуги</a></li>
+					<li><a href='subscribe.html'>Подписаться на рассылку</a></li>
+					<li><a href='helpme.html'>Помощь проекту</a></li>
+					<li><a href='partnership.html'>Сотрудничество</a></li>
+				</ul>
+			</div>
+		</nav>
+		<nav id='mobileCabMenu' class='menuWrap tab mobileCabMenu'>
+			<div class='delete'></div>
+			<div class='menu'>
+				<span class='h2 light'>Личное <br />меню</span>
+				<ul class='menuList'>
+					<li><a href='personalCab.html'>Основная страница</a></li>
+					<li><a href='news.html'>Новости</a></li>
+					<li>
+						<a href='savedArticles.html'>
+							Отложенные статьи(<span class='numberOfSavedArticles'>3</span>)
+						</a>
+					</li>
+					<li>
+						<a href='readArticles.html' class='activeMenuElem'>
+							Прочитанные статьи(<span class='numberOfReadArticles'>5</span>)
+						</a>
+					</li>
+					<li>
+						<a href='authorChallanges.html'>
+							Авторские челленджи(<span class='numberOfAuthorChallanges'>4</span>)
+						</a>
+					</li>
+					<li>
+						<a href='userChallanges.html'>
+							Личные челленджи(<span class='numberOfUserChallanges'>3</span>)
+						</a>
+					</li>
+					<li><a href='#'>Профиль</a></li>
+					<li><a href='#'>Продление подписки</a></li>
+					<li><a href='#'>Выйти</a></li>
+				</ul>
+			</div>
+		</nav>
+		<section class='mainCabWrapper' id='mainCabWrapperTab'>
+			<div class='cabMenu animated' id='personalCabMenu'>
+				<ul>
+					<li><a href='personalCab.html'><div>Главная страница</div></a></li>
+					<li><a href='news.html'><div>Новости</div></a></li>
+					<li>
+						<a href='savedArticles.html'>
+							<div>
+								Отложенные статьи(<span class='numberOfSavedArticles'>3</span>)
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href='readArticles.html'>
+							<div class='activeCabLink'>
+								Прочитанные статьи(<span class='numberOfReadArticles'>5</span>)
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href='authorChallanges.html'>
+							<div>
+								Авторские челленджи(<span class='numberOfAuthorChallanges'>4</span>)
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href='userChallanges.html'>
+							<div>
+								Личные челленджи(<span class='numberOfUserChallanges'>3</span>)
+							</div>
+						</a>
+					</li>
+					<li><a href='#'><div>Профиль</div></a></li>
+					<li><a href='#'><div>Продление подписки</div></a></li>
+					<li><a href='#'><div>Выйти</div></a></li>
+				</ul>
+			</div>
+			<div id='readArticlesContainer' class='cabMainContentWrapper'>
+				<div class="cabMainContent" id='sortedArticlesContainer'>
+					<div class='toReadData'>
+						<div class='removeToReadData'></div>
+						<div class='toReadHeader'><a href='#'>Добавление новой функции vip пользователям!</a></div>
+						<div class='publishedDate'>Дата: 22.12.2018</div>
+					</div>
+					<div class='toReadData'>
+						<div class='removeToReadData'></div>
+						<div class='toReadHeader'><a href='#'>Какой-то очень очень важный, а как следствие основной заголовок статьи</a></div>
+						<div class='publishedDate'>Дата: 22.12.2018</div>
+					</div>
+					<div class='toReadData'>
+						<div class='removeToReadData'></div>
+						<div class='toReadHeader'><a href='#'>Добавление новой функции vip пользователям!</a></div>
+						<div class='publishedDate'>Дата: 22.12.2018</div>
+					</div>
+					<div class='toReadData'>
+						<div class='removeToReadData'></div>
+						<div class='toReadHeader'><a href='#'>Добавление новой функции vip пользователям!</a></div>
+						<div class='publishedDate'>Дата: 22.12.2018</div>
+					</div>
+					<div class='toReadData'>
+						<div class='removeToReadData'></div>
+						<div class='toReadHeader'><a href='#'>Добавление новой функции vip пользователям!</a></div>
+						<div class='publishedDate'>Дата: 22.12.2018</div>
+					</div>
+				</div>
+				<div class='pagination'>
+					<div class='toStart'></div>
+					<div class='previous'></div>
+					<div class='pagNumber activePag'>1</div>
+					<div class='pagNumber'>2</div>
+					<div class='pagNumber'>3</div>
+					<div class='pagNumber'>4</div>
+					<div class='pagNumber'>5</div>
+					<div class='next'></div>
+					<div class='toEnd'></div>
+				</div>
+			</div>
+		</section>
+		<footer id='footer'>
+			<div class='copyright'>
+				<div>
+					<span class='normalLobster light'>
+						&copy;2018 Голубев Никита - Блог NikitosGolubev
+					</span>
+					<div class='smallNavbar'>
+						<a href='#'>Заказ рекламы</a>
+						/
+						<a href='#'>Правила и соглашения</a>
+						/
+						<a href='#'>Приватность</a>
+					</div>
+				</div>
+			</div>
+			<div class='socialMediaFooter'>
+				<div class='socialMedia'>
+					<a class='targetBlank' href='#'><div class='social vk size-medium'></div></a>
+					<a class='targetBlank' href='#'><div class='social instagram size-medium'></div></a>
+					<a class='targetBlank' href='#'><div class='social gitHub size-medium'></div></a>
+					<a class='targetBlank' href='#'><div class='social linkedIn size-medium'></div></a>
+				</div>
+				<div class="verticalLineFooter lightBg"></div>
+				<div class='socialMedia'>
+					<a class='targetBlank' href='#'><div class='social youtube size-medium'></div></a>
+					<a class='targetBlank' href='#'><div class='social facebook size-medium'></div></a>
+					<a class='targetBlank' href='#'><div class='social twitter size-medium'></div></a>
+					<a class='targetBlank' href='#'><div class='social telegram size-medium'></div></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript" src="template/js/main.js"></script>
+	<script type="text/javascript" src="template/js/menu.js"></script>
+	<script type="text/javascript" src="template/js/personalCabMenu.js"></script>
+	<script type="text/javascript" src="template/js/toRead.js"></script>
+</body>
+</html>

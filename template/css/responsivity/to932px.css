@@ -1,0 +1,24 @@
+@media screen and (max-width: 1024px) {
+	.size-big {
+		width: 42px;
+		height: 42px;
+		margin: 0 8px;	
+	}
+
+	.size-medium {
+		width: 35px;
+		height: 35px;
+		margin: 0 5px;
+	}
+
+	.size-small {
+		width: 25px;
+		height: 25px;
+		margin: 0 3px;
+	}
+	.size-tiny {
+		width: 20px;
+		height: 20px;
+		margin: 0 2px;
+	}
+}

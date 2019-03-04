@@ -1,0 +1,110 @@
+/*** Main Styles ***/
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+/*** Cabinet Header ***/
+
+.cabHeader {
+	display: flex;
+	background: #ea4c4c;
+	padding: 5px 15px;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	width: calc(100% - 30px);
+	z-index: 1;
+}
+
+.logoAndCabNavBtn {display: flex; align-items: center;}
+
+.mainMenuBtn .burger {width: 32px; height: 32px;}
+
+.cabNavBtn {
+	width: 32px;
+	height: 32px;
+	background: url("../images/cabMenu.png") center center no-repeat;
+	cursor: pointer;
+	background-size: cover;
+	transition: 0.4s;
+}
+.cabNavBtn:hover {opacity: 0.4;}
+.cabNavBtn:active, .cabMenuVisible {opacity: 0.7;}
+
+.cabLogo {margin-left: 2px;}
+.cabLogo a {
+	color: #faf4d0;
+	font-family: 'Lobster';
+	font-style: normal;
+	font-size: 200%;
+}
+
+/*** Main Part ***/
+
+.mainCabWrapper {
+	margin: 25px;
+	display: flex;
+	margin-bottom: 70px;
+	margin-top: 85px;
+	flex: 1 0 auto;
+}
+
+/*** Cabinet Menu ***/
+
+.cabMenu {
+	box-shadow: 2px 0px 6px 0px rgba(0,0,0,0.3),
+				-2px -0px 6px 0px rgba(0,0,0,0.3);
+	height: 100%;
+}
+
+.cabMenu li a div {
+	border-bottom: 1px solid #ea4c4c;
+	padding: 10px 15px;
+	text-align: center;
+	width: 250px;
+	max-width: 250px;
+	transition: 0.4s all;
+}
+
+.cabMenu li:first-child a div {border-top: 1px solid #ea4c4c;}
+.cabMenu li a div:hover, .activeCabLink {background: #ea4c4c; color: #faf4d0;}
+.cabMenu li a div:active, .activeCabLink {opacity: 0.8;}
+
+.cabMenu li a {
+	color: #ea4c4c;
+	font-family: 'Open Sans Light';
+	font-style: normal;
+}
+
+.mobileCabMenu {background: linear-gradient(90deg, #ea4c4c 50%, #c14545 50%);}
+
+/*** Main Content ***/
+
+.cabMainContentWrapper {width: calc(100% - 250px); margin-left: 30px;}
+
+/*** Footer ***/
+
+#footer {flex: 0 0 auto;}
+
+/*** Responsivity css ***/
+
+@media screen and (max-width: 768px) {
+	.cabMenu {display: none;}
+	.cabMainContentWrapper {width: 100%; margin-left: 0;}
+
+	.cabMenuVisible {opacity: 1;}
+}
+
+@media screen and (max-width: 414px) {
+	.mainCabWrapper {
+		margin: 10px;
+		margin-bottom: 70px;
+		margin-top: 60px;
+	}
+}

@@ -1,0 +1,22 @@
+@media screen and (max-height: 425px) {
+	.menu {font-size: 12pt;}
+	.menuList li {margin: 6px 0;}
+	.menuList a {font-size: 110%;}
+}
+
+@media screen and (max-height: 390px) {
+	.headerContent .quote {display: none;}
+
+	#showDataAboutMe {margin: 25px 0;}
+}
+
+@media screen and (max-height: 340px) {	
+	.headerContent .below {display: none;}
+	.menu {font-size: 11pt;}
+	#showDataAboutMe {margin-top: 20px;}
+}
+
+@media screen and (max-height: 320px) {
+	.menu {font-size: 10pt;}
+	.menuList li {margin: 5px 0;}
+}

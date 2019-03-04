@@ -1,0 +1,13 @@
+.servicesContent {line-height: 1.6; padding: 15px 7%;}
+.servicesContent p {margin: 20px 0;}
+
+.techHeader {
+	margin-left: 10px;
+	font-size: 120%;
+	font-family: 'Open Sans Light';
+	cursor: pointer;
+	transition: 0.4s all;
+}
+
+.techHeader:hover {font-weight: bold;}
+.techHeader:active {opacity: 0.7;}

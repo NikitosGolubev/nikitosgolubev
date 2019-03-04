@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Статьи. Программирование, саморазвитие, жизнь.</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="template/css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/pages/articles.css" />
+	<!-- RESPONSIVITY -->
+	<link rel="stylesheet" type="text/css" href="template/css/responsivity/to932px.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/responsivity/to768_736_667px.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/responsivity/to414px.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/responsivity/to375_320px.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/responsivity/height.css" />
+</head>
+<body id='body'>
+	<header class='fullscreen tab light borderedTabWrap' id='tabArticlesInto'>
+		<div class='borderedTab'>
+			<div class='burger fixedBurger'></div>
+			<div class='headerContent'>
+				<div><a class='logoText' href='#'>Статьи</a></div>
+				<div class='quote'>“Дают хук слева, можно ответить хуком справа, но лучше ударить по яйцам”<br />- Это я искал умные фразы для этой секции.</div>
+				<div class='below'></div>
+			</div>
+			<div class='littleFixedLogo'><a class='normalLobster light' href='#'>NikitosGolubev</a></div>
+		</div>
+	</header>
+	<nav id='mainMenu' class='menuWrap tab'>
+		<div class='delete'></div>
+		<div class='menu'>
+			<span class='h1 light'>Меню</span>
+			<ul class='menuList'>
+				<li><a href='index.html'>Главная</a></li>
+				<li><a class='activeMenuElem' href='articles.html'>Статьи</a></li>
+				<li><a href='reg.html' class='specialLink'>Стать особенным</a></li>
+				<li><a href='login.html' class='specialLink'>Войти</a></li>
+				<li><a href='portfolio.html'>Моё портфолио</a></li>
+				<li><a href='services.html'>Мои услуги</a></li>
+				<li><a href='subscribe.html'>Подписаться на рассылку</a></li>
+				<li><a href='helpme.html'>Помощь проекту</a></li>
+				<li><a href='partnership.html'>Сотрудничество</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section id='fixedMenu' class='redGradientBg animated fadeInDownBig'>
+		<div class='fixedMenuLogoWrap'>
+			<div class='fixedMenuLogo'>
+				<a class='brownHover light normalLobster'>NikitosGolubev - божественный блог</a>
+			</div>
+			<div class='smallNavbar'>
+				<a href='#'>Заказ рекламы</a> /
+				<a href='#'>Моё портфолио</a> /
+				<a href='#'>Социальные сети</a>
+			</div>
+		</div>
+		<div class='light'>
+			<div class='burger size-tiny'></div>
+		</div>
+	</section>
+	<section class='tabPaddings twoColumnFlexCentered' id='lastArticlesTab'>
+		<div class='sovetPepe'>
+			<img src="template/images/sovetPepe.png" alt='Советский, усталый от жизни Pepe' />
+		</div>
+		<div class='sovetPepeText'>
+			<span class='h2_5'>Последние статьи!</span>
+			<p class='presentText'>
+				<ul class='lastArticlesList'>
+					<li>0) <a href='#'>Циклы Очень Большой заголовок статьи номер 1 - 24.03.2018</a> 
+						<span class='subscribersOnly'>(Для подписчиков)</span>
+					</li>
+					<li>1) <a href='#'>Циклы заголовок статьи номер 1 - 24.03.2018</a> </li>
+					<li>2) <a href='#'>Циклы Большой заголовок статьи номер 1 - 24.03.2018</a> 
+						<span class='subscribersOnly'>(Для подписчиков)</span>
+					</li>
+					<li>3) <a href='#'>Заголовок статьи номер 1 - 24.03.2018</a> 
+						<span class='subscribersOnly'>(Для подписчиков)</span>
+					</li>
+					<li>4) <a href='#'>Циклы Очень Большой заголовок статьи номер 1 - 24.03.2018</a> </li>
+				</ul>
+			</p>
+			<div class='textSign'></div>
+		</div>
+	</section>
+	<section class='articlesFilter' id='articlesFilterTab'>
+		<div class='catSelect'>
+			<select class='lightSelect' name='articleByCat'>
+				<option value="" disabled selected>Категория:</option>
+				<option value='main'>Основные категории</option>
+				<option value='html'>HTML</option>
+				<option value='css'>CSS</option>
+				<option value='health'>Здоровье</option>
+				<option value='coding'>Программирование</option>
+				<option value='other'>Прочее</option>
+			</select>
+		</div>
+		<div class='articleSearch'>
+			<input class='lightInput searchInput' type='text' name='search' placeholder="Поиск" />
+			<button class='searchBtn'></button>
+		</div>
+	</section>
+	<section class='tabPaddings' id='categoryTab'>
+		<div class='centered'><span class='h2_5'>Основные категории!</span></div>
+		<div class='circleNumberList categoryList'>
+			<div class='circleListLi'>
+				<div class='circleDecoration'>1</div>
+				<div><span class='h3 dark catListName'>Программирование</span></div>
+			</div>
+			<div class='circleListLi'>
+				<div class='circleDecoration'>2</div>
+				<div><span class='h3 dark catListName'>Здоровье</span></div>
+			</div>
+			<div class='circleListLi'>
+				<div class='circleDecoration'>3</div>
+				<div><span class='h3 dark catListName'>Жизненное</span></div>
+			</div>
+			<div class='circleListLi'>
+				<div class='circleDecoration'>4</div>
+				<div><span class='h3 dark catListName'>Статьи для подписчиков</span></div>
+			</div>
+			<div class='circleListLi'>
+				<div class='circleDecoration'>5</div>
+				<div><span class='h3 dark catListName'>Прочее</span></div>
+			</div>
+		</div>
+	</section>
+	<footer id='footer'>
+		<div class='copyright'>
+			<div>
+				<span class='normalLobster light'>
+					&copy;2018 Голубев Никита - Блог NikitosGolubev
+				</span>
+				<div class='smallNavbar'>
+					<a href='#'>Заказ рекламы</a>
+					/
+					<a href='#'>Правила и соглашения</a>
+					/
+					<a href='#'>Приватность</a>
+				</div>
+			</div>
+		</div>
+		<div class='socialMediaFooter'>
+			<div class='socialMedia'>
+				<a class='targetBlank' href='#'><div class='social vk size-medium'></div></a>
+				<a class='targetBlank' href='#'><div class='social instagram size-medium'></div></a>
+				<a class='targetBlank' href='#'><div class='social gitHub size-medium'></div></a>
+				<a class='targetBlank' href='#'><div class='social linkedIn size-medium'></div></a>
+			</div>
+			<div class="verticalLineFooter lightBg"></div>
+			<div class='socialMedia'>
+				<a class='targetBlank' href='#'><div class='social youtube size-medium'></div></a>
+				<a class='targetBlank' href='#'><div class='social facebook size-medium'></div></a>
+				<a class='targetBlank' href='#'><div class='social twitter size-medium'></div></a>
+				<a class='targetBlank' href='#'><div class='social telegram size-medium'></div></a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="template/js/main.js"></script>
+	<script type="text/javascript" src="template/js/scroll.js"></script>
+	<script type="text/javascript" src="template/js/menu.js"></script>
+</body>
+</html>

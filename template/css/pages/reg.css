@@ -1,0 +1,154 @@
+#introTab .littleFixedLogo a, .headerQuestion {color: #ea4c4c;}
+
+.tabPaginationFixed {
+	position: absolute;
+	right: 25px;
+	top: 45%;
+}
+
+.headerQuestion {
+	font-family: 'Open Sans Light';
+	font-size: 330%;
+	margin: 0 90px 20px 90px;
+}
+.headerCallToAction {color: #c14545; font-family: 'Open Sans';}
+
+
+.redPoints .point {border: 2px solid #c14545; background: #faf4d0;}
+.whitePoints .point {border: 2px solid #faf4d0; background: #c14545;}
+.redPoints, .whitePoints {flex-direction: column;}
+
+.redPoints .point, .whitePoints .point {
+	width: 20px;
+	height: 20px;
+	margin: 3px 0px;
+}
+.redPoints .activePoint {background: #c14545;}
+.whitePoints .activePoint {background: #faf4d0;}
+.whitePoints .point:hover {background: #faf4d0;}
+.redPoints .point:hover {background: #c14545;}
+
+#reg {background: #ea4c4c;}
+
+.regContent {
+	color: #faf4d0;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.regText {
+	max-width: 40%;
+	margin-right: 40px;
+	text-align: left;
+	font-size: 110%;
+}
+
+.getMoreAboutVip {text-align: center;}
+.getMoreAboutVip .btn {font-size: 85%;}
+
+.logForm {
+	border: 3px solid #faf4d0;
+	padding: 30px;
+	border-radius: 20px;
+}
+.regHeader {color: #faf4d0;}
+.logForm input {margin-top: 20px;}
+.logForm .lightInput {padding: 10px; font-size: 130%;}
+
+.regSubmit {padding: 10px 40px;}
+.underlined {text-decoration: underline;}
+
+.authTools a, .authTools {
+	color: #faf4d0;
+	font-style: normal;
+	font-family: 'Open Sans Light';
+	margin-top: 15px;
+}
+.authTools a:hover {text-decoration: underline;}
+.authTools a:active {font-weight: bold;}
+
+.logForm .getMoreAboutVip {display: none;}
+.logForm .getMoreAboutVip .btn {padding: 5px; margin-top: 5px;}
+
+#accountInfo {background: #c14545;}
+
+#accountInfo .headerContent {
+	overflow: auto;
+	text-align: left;
+	padding: 5% 10%;
+	color: #faf4d0;
+}
+#accountInfo .headerContent::-webkit-scrollbar {width: 12px; background-color: #ea4c4c;}
+#accountInfo .headerContent::-webkit-scrollbar-thumb {width: 12px; background-color: #703b3b;}
+
+@media screen and (max-width: 1024px) {
+	.headerQuestion {font-size: 270%; margin: 0 50px 20px 50px;}
+}
+
+@media screen and (max-width: 900px) {
+	.logForm {padding: 30px 20px;}
+	.logForm input {margin-top: 18px;}
+	.logForm .lightInput {padding: 7px; font-size: 115%;}
+	.regText {
+		width: 45%;
+		margin-right: 20px;
+		font-size: 105%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.headerQuestion {font-size: 220%;}
+	.regText {display: none;}
+	.logForm .getMoreAboutVip {display: block;}
+	.logForm {padding: 30px;}
+	.logForm input {margin-top: 20px;}
+	.logForm .lightInput {padding: 10px; font-size: 130%;}
+}
+
+@media screen and (max-width: 630px) {
+	.headerQuestion {font-size: 180%; margin: 0 60px 20px 60px;}
+}
+
+@media screen and (max-width: 540px) {
+	.headerQuestion {font-size: 150%;}
+}
+
+@media screen and (max-width: 480px) {
+	.headerQuestion {font-size: 120%; margin: 0 50px 10px 50px;}
+	.logForm {padding: 30px 20px;}
+	.logForm input {margin-top: 18px;}
+	.logForm .lightInput {padding: 7px; font-size: 115%;}
+}
+
+@media screen and (max-width: 410px) {
+	.tabPaginationFixed {right: 20px;}
+}
+
+@media screen and (max-width: 380px) {
+	.logForm input {margin-top: 10px;}
+	.logForm .lightInput {padding: 4px; font-size: 110%; width: 150px;}
+	.regSubmit {color: #ea4c4c; padding: 10px 30px;}
+}
+
+@media screen and (max-height: 450px) {
+	.logForm {padding: 15px;}
+	.logForm input {margin-top: 15px;}
+	.authTools, .authTools a {margin-top: 8px;}
+	.regText {font-size: 90%;}
+	.getMoreAboutVip .btn {padding: 8px;}
+}
+
+@media screen and (max-height: 400px) and (min-width: 541px) {
+	.headerQuestion {font-size: 170%;}
+}
+
+@media screen and (max-height: 390px){
+	.logForm {padding: 10px;}
+}
+
+@media screen and (max-height: 370px) {
+	.logForm input {margin-top: 10px;}
+	.authTools, .authTools a {margin-top: 5px; font-size: 90%;}
+	.logForm .lightInput {padding: 8px; font-size: 100%;}
+}

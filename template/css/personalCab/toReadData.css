@@ -1,0 +1,72 @@
+.toReadData {
+	color: #faf4d0;
+	padding: 15px;
+	margin-top: 20px;
+	position: relative;
+}
+
+.toReadData:first-child {margin-top: 0;}
+.toReadData:nth-child(odd) {background: #ea4c4c;}
+.toReadData:nth-child(even) {background: #c14545;}
+
+.toReadHeader, .toReadHeader a {
+	color: #faf4d0;
+	font-family: 'Lobster';
+	font-style: normal;
+	margin-right: 65px;
+}
+
+.toReadHeader {font-size: 160%;line-height: 1.1}
+
+.toReadHeader a {font-size: 90%;}
+.toReadHeader a:hover {text-decoration: underline;}
+.toReadHeader a:active {opacity: 0.7;}
+
+.publishedDate {
+	font-family: 'Open Sans';
+	font-size: 95%;
+	margin-top: 10px;
+}
+
+.openToReadData, .closeToReadData, .removeToReadData {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	border: 2px dashed #faf4d0;
+	cursor: pointer;
+	position: absolute;
+	right: 15px;
+	top: 22px;
+	transition: 0.4s all;
+}
+
+.openToReadData {background: url('../../images/arrowDownH.png') center center no-repeat; background-size: 28px 28px;}
+
+.closeToReadData {
+	background: url('../../images/arrowUpH.png') center center no-repeat;
+	background-size: 28px 28px;
+	opacity: 0.4;
+}
+.removeToReadData {background: url('../../images/trashBin.png') center center no-repeat; background-size: 28px 28px;}
+
+.openToReadData:hover, .closeToReadData:hover, .removeToReadData:hover {opacity: 0.7;}
+.openToReadData:active, .removeToReadData:active {opacity: 0.4;}
+.closeToReadData:active {opacity: 1;}
+
+.readContent {display: none;}
+
+@media screen and (max-width: 800px) {
+	.openToReadData, .closeToReadData, .removeToReadData {width: 36px; height: 36px;}
+	.openToReadData, .removeToReadData {background-size: 20px 20px;}
+
+	.closeToReadData {background-size: 20px 20px; opacity: 0.4;}
+	.toReadHeader, .toReadHeader a {margin-right: 53px;}
+}
+
+@media screen and (max-width: 600px) {
+	.toReadHeader {font-size: 130%;}
+}
+
+@media screen and (max-width: 375px) {
+	.toReadHeader {font-size: 120%;}
+}

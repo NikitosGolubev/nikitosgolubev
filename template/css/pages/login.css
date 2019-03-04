@@ -1,0 +1,64 @@
+#mainContent {background: #ea4c4c;}
+
+.headerContent {
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.flowersDec, .elephantDec {
+	max-width: 50%;
+	min-width: 400px;
+	margin-left: -70px;
+	margin-right: 5%;
+}
+
+.elephantDec {max-width: 40%;}
+.flowersDec img, .elephantDec img {width: 100%;}
+
+.oneBorderBtn, .oneBorderInput {
+	background: transparent;
+	font-family: 'Open Sans Light';
+	margin: 15px 0;
+	color: #faf4d0;
+	font-size: 110%;
+}
+
+.oneBorderInput {
+	border-bottom: 1px solid #faf4d0;
+	padding: 0 5px 5px 5px;
+	width: 280px;
+}
+.oneBorderInput::placeholder {color: #faf4d0;}
+.oneBorderInput::-moz-placeholder {color: #faf4d0;}
+.oneBorderInput::-webkit-input-placeholder {color: #faf4d0;}
+
+.oneBorderBtn {
+	border: 1px solid #faf4d0;
+	padding: 8px 30px;
+	cursor: pointer;
+	transition: 0.4s all;
+}
+.oneBorderBtn:hover {background: #faf4d0; color: #ea4c4c;}
+.oneBorderBtn:active {font-weight: bold;}
+
+.authNav a, .authNav {
+	color: #faf4d0;
+	font-style: normal;
+	font-size: 90%;
+	font-family: 'Open Sans Light';
+}
+.authNav a:hover {text-decoration: underline;}
+.authNav a:active {font-weight: bold;}
+
+@media screen and (max-width: 1024px) {
+	.flowersDec, .elephantDec {margin-left: 0;}
+}
+
+@media screen and (max-width: 800px) {
+	.flowersDec, .elephantDec {margin-right: 20px;}
+}
+
+@media screen and (max-width: 768px) {
+	.flowersDec, .elephantDec {display: none;}
+}

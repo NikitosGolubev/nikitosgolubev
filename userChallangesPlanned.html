@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Личный кабинет - Мои запланированные челленджи - NikitosGolubev</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="template/css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/personalCab.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/personalCab/challanges.css" />
+	<!-- RESPONSIVITY -->
+	<link rel="stylesheet" type="text/css" href="template/css/responsivity/to932px.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/responsivity/to768_736_667px.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/responsivity/to414px.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/responsivity/to375_320px.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/responsivity/height.css" />
+</head>
+<body id='body'>
+	<div class='wrapper'>
+		<header class='cabHeaderWrapper' id='cabHeaderTab'>
+			<div class='cabHeader'>
+				<div class='logoAndCabNavBtn'>
+					<div class='cabNavBtn cabMenuVisible' id='personalCabMenuBtn'></div>
+					<div class='cabLogo'><a href='#'>NikitosGolubev</a></div>
+				</div>
+				<div class='mainMenuBtn'>
+					<div class='burger whiteBurgerOpacity'></div>
+				</div>
+			</div>
+		</header>
+		<nav id='mainMenu' class='menuWrap tab'>
+			<div class='delete'></div>
+			<div class='menu'>
+				<span class='h1 light'>Меню</span>
+				<ul class='menuList'>
+					<li><a class='activeMenuElem' href='index.html'>Главная</a></li>
+					<li><a href='articles.html'>Статьи</a></li>
+					<li><a href='reg.html' class='specialLink'>Стать особенным</a></li>
+					<li><a href='login.html' class='specialLink'>Войти</a></li>
+					<li><a href='portfolio.html'>Моё портфолио</a></li>
+					<li><a href='services.html'>Мои услуги</a></li>
+					<li><a href='subscribe.html'>Подписаться на рассылку</a></li>
+					<li><a href='helpme.html'>Помощь проекту</a></li>
+					<li><a href='partnership.html'>Сотрудничество</a></li>
+				</ul>
+			</div>
+		</nav>
+		<nav id='mobileCabMenu' class='menuWrap tab mobileCabMenu'>
+			<div class='delete'></div>
+			<div class='menu'>
+				<span class='h2 light'>Личное <br />меню</span>
+				<ul class='menuList'>
+					<li><a href='personalCab.html'>Основная страница</a></li>
+					<li><a href='news.html'>Новости</a></li>
+					<li>
+						<a href='savedArticles.html'>
+							Отложенные статьи(<span class='numberOfSavedArticles'>3</span>)
+						</a>
+					</li>
+					<li>
+						<a href='readArticles.html'>
+							Прочитанные статьи(<span class='numberOfReadArticles'>5</span>)
+					</a>
+					</li>
+					<li>
+						<a href='authorChallanges.html'>
+							Авторские челленджи(<span class='numberOfAuthorChallanges'>4</span>)
+						</a>
+					</li>
+					<li>
+						<a class='activeMenuElem' href='userChallanges.html'>
+							Личные челленджи(<span class='numberOfUserChallanges'>3</span>)
+						</a>
+					</li>
+					<li><a href='#'>Профиль</a></li>
+					<li><a href='#'>Продление подписки</a></li>
+					<li><a href='#'>Выйти</a></li>
+				</ul>
+			</div>
+		</nav>
+		<section class='createChallange'>
+			<div class='delete darkDeleteOpacity'></div>
+			<form name="createChallange" action="#" method="post">
+				<div class='challangeCreationForm'>
+					<div class='creationFormName'>
+						<span class='h3 dark'>Разработка челленджа</span>
+					</div>
+					<div class='userNote'>
+						<div class='invitationToLook'>
+							Примечание к заполнению формы! (README)
+						</div>
+						<div class='noteInnerWrap'>
+							<div class='noteInner'>
+								<div class='noteControls'>
+									<a href='#' class='noteLogo'>NikitosGolubev</a>
+									<div class='closeNote'></div>
+								</div>
+								<div class='noteContent'>
+									<p>Здравствуй, перед тобой особенности и ограничения создания челленджей:</p>
+									<p><b><i>Одновременно можно учавствовать максимум в 7 челленджах!</i></b></p>
+									<p>
+										<ul>
+											<li><b>Название челленджа:</b></li>
+											<li>-) Не меньше 8 символов.</li>
+											<li>-) Не больше 100 символов.</li>
+											<li>-) Пробелы, ставящиеся подряд в количестве больше 2х - вырезаются.</li>
+										</ul>
+									</p>
+									<p>
+										<ul>
+											<li><b>Продолжительность челленджа:</b></li>
+											<li>-) Не меньше 3х дней.</li>
+											<li>-) Не больше 365 дней.</li>
+											<li>-) Только целые дни, дробные варианты не принимаются.</li>
+										</ul>
+									</p>
+									<p>
+										<ul>
+											<li><b>Дата начала и конца челленджа:</b></li>
+											<li>-) Челлендж будет начат в день даты начала, а закончен в 00:00 даты конца</li>
+											<li>-) Минимальная разница между ними - 3 дня.</li>
+											<li>-) Максимальная разница между ними - 365 дней.</li>
+										</ul>
+									</p>
+									<p>
+										<i>Спасибо вам за проявленное внимание, дорогие пользователи. Пользуйтесь данной функцией и <b>достигайте своих целей!</b></i>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='setChallangeName'>
+						<input id='challangeName' class='oneBorderInput' type="text" name='challangeName' placeholder="Название челленджа:" />
+					</div>
+					<div class='setChallangeDetails'>
+						<div class='leftCreateInputs'>
+							<div>
+								<input id='lastDays' class='oneBorderInput' type='text' name='lastDays' placeholder="Продолжительность(дней):" />
+							</div>
+							<div>
+								<input id='maxLostDays' class='oneBorderInput' type='text' name='maxLostDays' placeholder="Max число провальных дней:" />
+							</div>
+						</div>
+						<div class='rightCreateInputs'>
+							<div>
+								<input id='startDate' class='oneBorderInput' type='text' name='startDate' placeholder="Дата начала (dd.mm.yyyy):" />
+							</div>
+							<div>
+								<input id='endDate' class='oneBorderInput' type='text' name='endDate' placeholder="Дата конца (dd.mm.yyyy):" />
+							</div>
+						</div>
+					</div>
+					<div class='startChallangeBtnWrap'>
+						<input type="submit" name="createChallange" id='createChallange' class='challangeBtn' value='Разработать челлендж' />
+					</div>
+				</div>
+			</form>
+		</section>
+		<section id='confirmationTab' aim=''>
+			<div class='confirm'>
+				<div class='confirmationQuestion'>Вы действительно хотите совершить<br /> данное действие?</div>
+				<div class='confirmationControls'>
+					<button class='yes'>Да</button>
+					<button class='no'>Нет</button>
+				</div>
+			</div>
+		</section>
+		<section class='mainCabWrapper' id='mainCabWrapperTab'>
+			<div class='cabMenu animated' id='personalCabMenu'>
+				<ul>
+					<li><a href='personalCab.html'><div>Главная страница</div></a></li>
+					<li><a href='news.html'><div>Новости</div></a></li>
+					<li>
+						<a href='savedArticles.html'>
+							<div>
+								Отложенные статьи(<span class='numberOfSavedArticles'>3</span>)
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href='readArticles.html'>
+							<div>
+								Прочитанные статьи(<span class='numberOfReadArticles'>5</span>)
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href='authorChallanges.html'>
+							<div>
+								Авторские челленджи(<span class='numberOfAuthorChallanges'>4</span>)
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href='userChallanges.html'>
+							<div class='activeCabLink'>
+								Личные челленджи(<span class='numberOfUserChallanges'>3</span>)
+							</div>
+						</a>
+					</li>
+					<li><a href='#'><div>Профиль</div></a></li>
+					<li><a href='#'><div>Продление подписки</div></a></li>
+					<li><a href='#'><div>Выйти</div></a></li>
+				</ul>
+			</div>
+			<div class='cabMainContentWrapper'>
+				<div class="cabMainContent">
+					<div class='challangesMenu'>
+						<ul>
+							<li>
+								<a href='userChallanges.html'>
+									Текущие(<span class='numberOfCurrentUserChallanges'>1</span>)
+								</a>
+							</li>
+							<li>
+								<a href='userChallangesPlanned.html'  class='activeChallangeMenuLink'>
+									Запланированные(<span class='numberOfPlannedUserChallanges'>1</span>)
+								</a>
+							</li>
+							<li>
+								<a href='userChallangesCompleted.html'>
+									Завершённые(<span class='numberOfCompletedUserChallanges'>1</span>)
+								</a>
+								<div class="startChallange">+</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id='challanagesContainer'>
+					<div challangeId='34' days='16' maxLostDays='2' startDate='26.06.2018' endDate='12.07.2018' challangeName='Пить только воду 16 дней' class='challange'>
+						<div class='challangeHeader'>Пить только воду 16 дней</div>
+						<div class='progressBar'>
+							<div class='progress'></div>
+						</div>
+						<div class='challangeContent'>
+							<div class='personalChallangeControls delayedChallangeControls'>
+								<div>
+									<button class='brownEditBtn editChallange'>Редактировать</button>
+								</div>
+								<div>
+									<button class='cancelRedBtn cancelPlannedChallange'>Отменить</button>
+								</div>
+							</div>
+							<div class='challangeData'>
+								<div class='challangeDesc'>
+									<div class='challangeSubHeader'>Описание:</div>
+									<div class='stats'>
+										<div class='statTitle'>Всего дней:</div>
+										<div class='statValue'>16</div>
+									</div>
+									<div class='stats'>
+										<div class='statTitle'>Max возможное кол-во пропусков:</div>
+										<div class='statValue'>2</div>
+									</div>
+									<div class='stats'>
+										<div class='statTitle'>Дата начала:</div>
+										<div class='statValue statDate'>26.06.2018</div>
+									</div>
+									<div class='stats'>
+										<div class='statTitle'>Дата конца:</div>
+										<div class='statValue statDate'>12.07.2018</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id='footer'>
+			<div class='copyright'>
+				<div>
+					<span class='normalLobster light'>
+						&copy;2018 Голубев Никита - Блог NikitosGolubev
+					</span>
+					<div class='smallNavbar'>
+						<a href='#'>Заказ рекламы</a>
+						/
+						<a href='#'>Правила и соглашения</a>
+						/
+						<a href='#'>Приватность</a>
+					</div>
+				</div>
+			</div>
+			<div class='socialMediaFooter'>
+				<div class='socialMedia'>
+					<a class='targetBlank' href='#'><div class='social vk size-medium'></div></a>
+					<a class='targetBlank' href='#'><div class='social instagram size-medium'></div></a>
+					<a class='targetBlank' href='#'><div class='social gitHub size-medium'></div></a>
+					<a class='targetBlank' href='#'><div class='social linkedIn size-medium'></div></a>
+				</div>
+				<div class="verticalLineFooter lightBg"></div>
+				<div class='socialMedia'>
+					<a class='targetBlank' href='#'><div class='social youtube size-medium'></div></a>
+					<a class='targetBlank' href='#'><div class='social facebook size-medium'></div></a>
+					<a class='targetBlank' href='#'><div class='social twitter size-medium'></div></a>
+					<a class='targetBlank' href='#'><div class='social telegram size-medium'></div></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript" src="template/js/main.js"></script>
+	<script type="text/javascript" src="template/js/menu.js"></script>
+	<script type="text/javascript" src="template/js/personalCabMenu.js"></script>
+	<script type="text/javascript" src="template/js/dateFuncs.js"></script>
+	<script type="text/javascript" src="template/js/startChallange.js"></script>
+	<script type="text/javascript" src="template/js/createChallange.js"></script>
+	<script type="text/javascript" src="template/js/userNotes.js"></script>
+	<script type="text/javascript" src="template/js/confirmation.js"></script>
+	<script type="text/javascript" src="template/js/challanges.js"></script>
+</body>
+</html>

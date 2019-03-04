@@ -1,0 +1,370 @@
+.marked {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.slidesStorage {font-family: 'Open Sans Light';}
+
+.tabPaginationFixed {
+	position: absolute;
+	right: 25px;
+	top: 35%;
+}
+
+.brownPoints, .whitePoints {flex-direction: column;}
+.brownPoints .point {border: 2px solid #703b3b;}
+.whitePoints .point {border: 2px solid #faf4d0;}
+
+.brownPoints .point, .whitePoints .point {
+	width: 20px;
+	height: 20px;
+	margin: 3px 0px;
+	background: transparent;
+}
+.brownPoints .activePoint, .brownPoints .point:hover {background: #703b3b;}
+.whitePoints .activePoint, .whitePoints .point:hover {background: #faf4d0;}
+
+.rowFlex {
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+/*** Tab 1 ***/
+.starterText {
+	text-align: left;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	color: #faf4d0;
+}
+
+.helloHelpText {max-width: 850px;}
+
+.quotes {
+	font-family: 'Times New Roman';
+	font-weight: bold;
+	font-size: 300%;
+	position: absolute;
+	left: 10px;
+}
+
+.simpleBtn {
+	margin-top: 20px;
+	border: 2px solid #faf4d0;
+	color: #faf4d0;
+	font-family: 'Lobster';
+	font-size: 110%;
+	padding: 8px 20px;
+	background: transparent;
+	cursor: pointer;
+	transition: 0.4s all;
+}
+.simpleBtn:hover {background: #faf4d0; color: #703b3b;}
+.simpleBtn:active {opacity: 0.7;}
+
+/*** Tab 2 ***/
+#choiceTab {background: #fff;}
+
+.choice {
+	position: absolute;
+	z-index: -1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s all;
+	cursor: pointer;
+}
+
+.brownChoice {
+	height: 50%;
+	width: 50%;
+	background: rgba(112, 59, 59, 0.6);
+	left: 0;
+}
+
+.lightRedChoice {
+	height: 50%;
+	width: 50%;
+	background: rgba(234, 76, 76, 0.6);
+	right: 0;
+}
+
+.redChoice {
+	height: 50%;
+	width: 50%;
+	background: rgba(193, 69, 69, 0.6);
+	bottom: 0;
+}
+
+.whiteChoice {
+	height: 50%;
+	width: 50%;
+	background: rgba(250, 244, 208, 0.6);
+	right: 0;
+	bottom: 0;
+}
+
+.choiceText {
+	font-family: 'Lobster';
+	font-size: 250%;
+	opacity: 0.6;
+	transition: 0.4s all;
+	margin: 10px;
+}
+
+.brownChoice .choiceText {color: #faf4d0;}
+.lightRedChoice .choiceText {color: #c14545;}
+.redChoice .choiceText {color: #ea4c4c;}
+.whiteChoice .choiceText {color: #703b3b;}
+
+.brownChoice:hover {background: rgba(112, 59, 59, 0.7);}
+.lightRedChoice:hover {background: rgba(234, 76, 76, 0.7);}
+.redChoice:hover {background: rgba(193, 69, 69, 0.7);}
+.whiteChoice:hover {background: rgba(250, 244, 208, 0.7);}
+
+.brownChoice:hover .choiceText, .lightRedChoice:hover .choiceText, .redChoice:hover .choiceText, .whiteChoice:hover .choiceText {
+	opacity: 1;
+}
+
+/*** Tab 3 ***/
+#donateSlide {color: #faf4d0;}
+
+#donateSlide .rowFlex {
+	width: 85%;
+	margin-left: 7%;
+	margin-right: 8%;
+}
+
+.helpmeText {color: #faf4d0; text-align: left;}
+
+.paymentContacts {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+	margin-right: 60px;
+}
+
+.paymentContacts a {
+	font-size: 85%;
+	color: #faf4d0;
+	font-style: normal;
+	font-family: 'Open Sans Light';
+}
+.paymentContacts a:hover {text-decoration: underline;}
+.paymentContacts a:active {font-weight: bold;}
+.paymentContacts img {max-width: 160px;}
+
+.donateText {max-width: 520px;}
+
+/*** Tab 4 ***/
+#regVipUserTab .rowFlex {
+	width: 85%;
+	margin-left: 7%;
+	margin-right: 8%;
+}
+
+.regText {max-width: 500px; margin-right: 40px;}
+
+.logForm {
+	border: 3px solid #faf4d0;
+	padding: 30px;
+	border-radius: 20px;
+}
+.regHeader {color: #faf4d0;}
+.logForm input {margin-top: 20px;}
+.logForm .lightInput {padding: 10px; font-size: 130%;}
+
+.regSubmit {padding: 10px 40px;}
+.underlined {text-decoration: underline;}
+
+.authTools a, .authTools {
+	color: #faf4d0;
+	font-style: normal;
+	font-family: 'Open Sans Light';
+	margin-top: 15px;
+}
+.authTools a:hover {text-decoration: underline;}
+.authTools a:active {font-weight: bold;}
+
+.goAndReg {
+	text-align: center;
+	margin-top: 15px;
+	display: none;
+}
+
+/*** Tab 5 ***/
+#subscribeTab {background: #c14545;}
+#subscribeTab .rowFlex {
+	width: 85%;
+	margin-left: 7%;
+	margin-right: 8%;
+}
+
+.subText {max-width: 550px; margin-left: 40px;}
+
+/*** Tab 6 ***/
+.activeHelpText {
+	max-width: 800px;
+	width: 80%;
+	max-height: 90%
+}
+.activeHelpText .socialMedia {margin: auto;}
+
+@media screen and (max-width: 1024px) {
+	.paymentContacts {margin-right: 30px;}
+}
+
+@media screen and (max-width: 900px) {
+	.paymentContacts img {max-width: 100px;}
+
+	.paymentContacts {
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+		margin-right: 20px;
+	}
+
+	.logForm {padding: 30px 20px;}
+	.logForm input {margin-top: 18px;}
+	.logForm .lightInput {padding: 7px; font-size: 115%;}
+
+	.regText {margin-right: 20px;}
+	.activeHelpText, .regText {font-size: 90%;}
+}
+
+@media screen and (max-width: 800px) {
+	.subText {margin-left: 20px; font-size: 90%;}
+}
+
+@media screen and (max-width: 768px) {
+	#choiceTab .tabPaginationFixed {top: calc(50% - 13px); right: calc(50% - 90px);}
+
+	#choiceTab .brownPoints, #choiceTab .whitePoints {flex-direction: row;}
+	#choiceTab .brownPoints .point, #choiceTab .whitePoints .point {margin: 0px 3px;}
+
+	.donateText {font-size: 90%;}
+
+	.paymentContacts {
+		grid-template-columns: repeat(1, auto);
+		grid-column-gap: 0px;
+		grid-row-gap: 6px;
+		margin-right: 20px;
+		font-size: 65%;
+	}
+
+	.activeHelpText, .subText, .regText {font-size: 85%;}
+	.regText {margin-right: 20px;}
+	.subText {margin-left: 20px;}
+}
+
+@media screen and (max-width: 736px) {
+	.starterText {font-size: 90%; line-height: 1.4;}
+	.starterText p {margin: 5px 0;}
+
+	.simpleBtn {margin-top: 10px;}
+
+	.donateText {font-size: 85%;}
+}
+
+@media screen and (max-width: 666px) {
+	.choiceText {font-size: 200%;}
+
+	#donateSlide .rowFlex {
+		width: 91%;
+		margin-left: 1%;
+		margin-right: 8%;
+	}
+
+	.paymentContacts {margin-right: 10px;}
+	.paymentContacts a, .activeHelpText {font-size: 80%;}
+	.paymentContacts img {max-width: 80px;}
+
+	.logForm {display: none;}
+
+	.goAndReg {display: block;}
+
+	.subText {margin-left: 0px; margin-right: 20px;}
+}
+
+@media screen and (max-width: 555px) {
+	.starterText, .activeHelpText {
+		font-size: 80%;
+		margin-left: 20px;
+		margin-right: 10%;
+		align-items: flex-end;
+	}
+
+	.simpleBtn {margin-right: 10px;}
+	.choiceText {font-size: 170%;}
+
+	.donateText {display: none;}
+	#donateSlide .rowFlex {width: 100%;}
+
+	.paymentContacts {
+		grid-template-columns: repeat(2, auto);
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;
+		margin-right: 30px;
+		font-size: 85%;
+	}
+	.paymentContacts img {max-width: 160px;}
+
+	#regVipUserTab .rowFlex {width: 87%; margin-left: 4%;}
+
+	.regText, .subText {font-size: 80%;}
+
+	.goAndReg {margin-top: 10px;}
+	.goAndReg .btn {padding: 6px 15px;}
+}
+
+@media screen and (max-width: 450px) {
+	.paymentContacts img {max-width: 100px;}
+
+	.regText, .activeHelpText {font-size: 75%;}
+}
+
+@media screen and (max-width: 413px) {
+	.choiceText {font-size: 150%;}
+
+	.paymentContacts {grid-column-gap: 15px; grid-row-gap: 15px;}
+}
+
+@media screen and (max-width: 375px) {
+	.starterText {margin-left: 10px;}
+
+	.activeHelpText {margin-left: 0px; margin-right: 15px}
+}
+
+@media screen and (max-height: 500px) {
+	.helloHelpText, .activeHelpText  {overflow: auto;}
+
+	.helloHelpText {margin-top: 15px;}
+
+	.simpleBtn {margin-bottom: 10px;}
+
+	.helloHelpText::-webkit-scrollbar {width: 5px; background-color: #703b3b;}
+	.helloHelpText::-webkit-scrollbar-thumb {width: 5px; background-color: #faf4d0;}
+
+	.activeHelpText::-webkit-scrollbar {width: 5px; background-color: #faf4d0;}
+	.activeHelpText::-webkit-scrollbar-thumb {width: 5px; background-color: #703b3b;}
+
+}
+
+
+@media screen and (max-height: 450px) {
+	.logForm {padding: 15px;}
+	.logForm input {margin-top: 15px;}
+}
+
+@media screen and (max-height: 390px){
+	.logForm {padding: 10px;}
+	.activeHelpText {height: 230px;}
+	.activeHelpText .socialMedia {margin-bottom: 30px;}
+}
+
+@media screen and (max-height: 370px) {
+	.logForm input {margin-top: 10px;}
+	.authTools, .authTools a {margin-top: 5px; font-size: 90%;}
+	.logForm .lightInput {padding: 8px; font-size: 100%;}
+}

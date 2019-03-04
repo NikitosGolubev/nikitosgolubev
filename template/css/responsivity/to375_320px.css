@@ -1,0 +1,24 @@
+@media screen and (max-width: 413px) {
+	body {font-size: 95%;}
+
+	.niggaText {max-width: 98%;}
+
+	.dogText {max-width: 98%;}
+
+	.textSign {width: 200px; height: 60px;}
+
+	.stewText input, .stewText textarea {min-width: 200px;}
+}
+
+@media screen and (max-width: 374px) {
+	body {font-size: 91%;}
+
+	.niggaText {max-width: 99%;}
+
+	.dogText {max-width: 99%;}
+
+	#showDataAboutMe {margin: 25px 0;}
+
+	#fixedMenu {padding: 10px 20px; width: calc(100% - 40px);}
+	.fixedMenuLogo {margin: 0px;}
+}

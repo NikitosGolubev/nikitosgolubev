@@ -1,0 +1,154 @@
+/*** Introductory tab with Fry from futurama ***/
+
+.fry {
+	width: 40%;
+	max-width: 450px;
+}
+
+.fry img {
+	width: 100%;
+}
+
+.fryText {
+	width: 55%;
+	text-align: center;
+	margin-left: 50px;
+}
+
+/*** Portfolio slider tab with works ***/
+
+.portfolio {
+	background: #c14545 url('../../images/redBrickBg.png') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 40px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.portfolioWork {
+	width: 200px;
+	height: 225px;
+	overflow: hidden;
+	background: #faf4d0;
+	position: relative;
+}
+.portfolioWork img {width: 100%; transition: 0.4s all;}
+.portfolioWork:hover img {opacity: 0.2;}
+.portfolioWork:hover .workPreview {display: flex;}
+
+.worksStack {
+	display: grid;
+	grid-template-columns: repeat(3, 200px);
+	grid-column-gap: 60px;
+	grid-row-gap: 60px;
+}
+
+.workPreview {
+	position: absolute;
+	height: calc(100% - 20px);
+	width: calc(100% - 20px);
+	text-align: center;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	padding: 10px;
+}
+
+.workPreview .btn {font-size: 100%; padding: 7px 10px;}
+
+.previewRestriction {
+	width: 80%;
+	margin-bottom: 5px;
+	height: 2px;
+	background: #703b3b;
+}
+
+.getMoreAboutWork {margin-top: 20px;}
+
+.workType {
+	color: #c14545;
+	font-style: italic;
+	margin: 10px;
+}
+
+.portfolio .sliderTypePagination {margin-top: 20px;}
+
+/*** Responsivity for this page ***/
+/* NOTE */
+/*** Portfolio in header(logo text) is such a big word that can not be breaked, so I have to write a special @media 
+for its responsivity***/
+
+@media screen and (max-width: 800px) {
+	.fry {display: none;}
+
+	.fryText {
+		width: 98%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.worksStack {
+		grid-template-columns: repeat(3, 170px);
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;
+	}
+
+	.portfolioWork {
+		width: 170px;
+		height: 175px;
+		font-size: 90%;
+	}
+
+	.workPreview {
+		height: calc(100% - 10px);
+		width: calc(100% - 10px);
+		padding: 5px;
+	}
+	.getMoreAboutWork {margin-top: 15px;}
+	.workType {margin: 5px;}
+}
+
+@media screen and (max-width: 600px) {
+	.worksStack {
+		grid-template-columns: repeat(2, 170px);
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;
+	}
+}
+@media screen and (max-width: 550px) {.logoText {font-size: 400% !important;}}
+@media screen and (max-width: 450px) {.logoText {font-size: 350% !important;}}
+
+@media screen and (max-width: 413px) {
+	.worksStack {
+		grid-template-columns: repeat(2, 150px);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+
+	.portfolioWork {
+		width: 150px;
+		height: 170px;
+		font-size: 100%;
+	}
+}
+
+@media screen and (max-width: 360px) {.logoText {font-size: 300% !important;}}
+@media screen and (max-width: 340px) {
+	.worksStack {
+		grid-template-columns: repeat(1, 200px);
+		grid-column-gap: 0px;
+		grid-row-gap: 20px;
+	}
+
+	.portfolioWork {
+		width: 200px;
+		height: 225px;
+		font-size: 100%;
+	}
+}

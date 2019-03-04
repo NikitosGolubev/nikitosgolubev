@@ -1,0 +1,72 @@
+@media screen and (max-width: 932px) {
+	body {font-size: 110%;}
+
+	.menu {margin: auto; font-size: 120%;}
+
+	.h1, .h2_5, .h2, .h3, .h4_5 {line-height: 0.75;}
+	.h1 {font-size: 350%;}
+	.h2_5 {font-size: 300%;}
+	.h2 {font-size: 270%;}
+	.h3 {font-size: 215%;}
+	.h4 {font-size: 200%;}
+	.h4_5 {font-size: 180%;}
+
+	.logoText {font-size: 600%;}
+
+	.textPreview {line-height: 1.25;}
+
+	.presentText {line-height: 1.7; margin: 20px 0;}
+
+	.dog, .nigga {display: none;}
+	.niggaText {max-width: 90%;}
+	.dogText {max-width: 90%;}
+
+	.articlesPreviewWrap {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.verticalHeader {
+		-webkit-writing-mode: horizontal-tb;
+		writing-mode: horizontal-tb;
+		max-width: 100%;
+	}
+
+	.socialMediaFooter {
+		width: 50%;
+		display: flex;
+		flex-direction: column
+	}
+
+	.verticalLineFooter {
+		width: 80%;
+		height: 1px;
+		margin: 15px 0;
+	}
+
+	.articlesPreview {
+		max-width: 100%;
+		min-width: 0px;
+		margin-right: 0;
+	}
+
+	.toStart, .previous, .next, .toEnd {width: 40px; height: 40px;}
+	.pagNumber {padding: 4px 10px;}
+
+}
+
+@media screen and (max-width: 800px) {
+	.stew {display: none;}
+
+	.stewText {
+		width: 98%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.coverImg {width: 130px; height: 130px;}
+}

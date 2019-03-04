@@ -1,0 +1,49 @@
+@media screen and (max-width: 667px) {
+
+	.logoText {font-size: 500%; line-height: 0.9;}
+
+	.headerContent .quote {margin-top: 20px;}
+
+	.coverImgWrap {display: none;}
+
+	.verticalHeader {text-align: center;}
+	.verticalHeader span {white-space: normal;}
+
+	#myPhoto {display: none; width: 0%;}
+
+	#aboutData {width: 100%;}
+
+	#closeAbout {opacity: 0.4; top: 70%;}
+	#closeAbout:hover {opacity: 1;}
+
+	.size-big {
+		width: 35px;
+		height: 35px;
+		margin: 0 6px;	
+	}
+
+	.size-medium {
+		width: 28px;
+		height: 28px;
+		margin: 0 4px;
+	}
+
+	.size-small {
+		width: 20px;
+		height: 20px;
+		margin: 0 3px;
+	}
+	.size-tiny {width: 15px; height: 15px;}
+
+	.verticalLineFooter {height: 1px; margin: 9px 0;}
+
+	.fixedMenuLogoWrap .smallNavbar, #footer .smallNavbar {display: none;}
+
+	.aboutWrap {margin: 0 20px;}
+}
+
+@media screen and (max-width: 460px) {
+	.toStart, .previous, .next, .toEnd {width: 32px; height: 32px; background-size: 18px 18px;}
+	.pagNumber {padding: 4px 8px;}
+	.pagination div {margin: 0 3px;}
+}

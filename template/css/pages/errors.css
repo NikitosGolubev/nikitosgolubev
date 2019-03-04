@@ -1,0 +1,42 @@
+body {
+	background: #ea4c4c;
+	color: #faf4d0;
+}
+
+.errorCode {
+	font-weight: bold;
+	font-size: 2800%;
+	line-height: 0.7;
+}
+
+.errorDesc {
+	font-family: 'Lobster';
+	font-size: 200%;
+	margin: 0 10px;
+	margin-top: 25px;
+}
+
+@media screen and (max-width: 768px) {
+	.errorCode {font-size: 2300%;}
+	.errorDesc {font-size: 160%;}
+}
+
+@media screen and (max-width: 666px) {
+	.errorCode {font-size: 1800%;}
+	.errorDesc {font-size: 130%; margin-top: 20px;}
+}
+
+@media screen and (max-width: 666px) {
+	.errorCode {font-size: 1400%;}
+	.errorDesc {font-size: 130%; margin-top: 20px;}
+}
+
+@media screen and (max-height: 500px) {
+	.errorCode {font-size: 1400%;}
+	.errorDesc {font-size: 130%; margin-top: 20px;}
+}
+
+@media screen and (max-height: 400px) {
+	.errorCode {font-size: 1200%;}
+	.errorDesc {font-size: 120%;}
+}

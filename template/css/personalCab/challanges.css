@@ -1,0 +1,650 @@
+/*** Challanges menu ***/
+
+.challangesMenu {display: flex; justify-content: center;}
+
+.challangesMenu ul {display: flex;  flex-wrap: wrap; justify-content: center; align-items: center;}
+.challangesMenu li {margin: 10px; display: flex; align-items: center;}
+
+.challangesMenu a {font-style: normal; font-family: 'Open Sans Light';}
+.challangesMenu a:hover {text-decoration: underline;}
+.challangesMenu a:active {font-weight: bold;}
+
+.activeChallangeMenuLink {font-weight: bold; text-decoration: underline;}
+
+/*** Challange styling ***/
+
+.startChallange {
+	border-radius: 50%;
+	background: #703b3b;
+	color: #faf4d0;
+	font-size: 230%;
+	width: 42px;
+	height: 42px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #703b3b;
+	transition: 0.4s all;
+	cursor: pointer;
+	margin-left: 20px;
+}
+.startChallange:hover {background: #faf4d0; color: #703b3b;}
+.startChallange:active {opacity: 0.4;}
+
+.challange {
+	margin: auto;
+	margin-bottom: 50px;
+	max-width: 950px;
+}
+.challange:last-child {margin-bottom: 0;}
+
+.challangeHeader {
+	font-family: 'Lobster'; 
+	font-size: 220%;
+	word-wrap: break-word;
+}
+
+.progressBar {
+	border: 2px solid #ea4c4c;
+	background: #c14545;
+	height: 10px;
+	max-width: 950px;
+	border-radius: 10px;
+	margin: 8px 0;
+}
+
+.progress {
+	width: 0%;
+	height: 100%;
+	border-radius: 10px;
+	border-radius: 10px;
+	background: #faf4d0;
+}
+
+.challangeContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.personalChallangeControls {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.delayedChallangeControls {margin-bottom: 0;}
+
+.personalChallangeControls button {
+	font-size: 90%;
+	padding: 3px 15px;
+	margin: 5px 10px;
+	border-radius: 30px;
+	font-family: 'Open Sans';
+	color: #faf4d0;
+	white-space: nowrap;
+	cursor: pointer;
+	transition: 0.4s all;
+}
+
+.brownEditBtn {background: #703b3b; border: 2px solid #703b3b;}
+.cancelRedBtn {background: #f00; border: 2px solid #f00;}
+.brownEditBtn:hover {background: #faf4d0; color: #703b3b;}
+.cancelRedBtn:hover {background: #faf4d0; color: #f00;}
+
+.personalChallangeControls button:active {opacity: 0.5;}
+
+.challangeControls {display: flex;}
+
+.challangeNav {
+	color: #faf4d0;
+	cursor: pointer;
+	width: auto;
+	height: auto;
+	border-radius: 0;
+	margin-top: 8px;
+	padding: 10px;
+	font-family: 'Open Sans Light';
+	font-size: 85%;
+	transition: 0.4s all;
+}
+.challangeNav:nth-child(odd) {background: #ea4c4c;}
+.challangeNav:nth-child(even) {background: #c14545;}
+.challangeNav:first-child {border-top-left-radius: 15px; border-bottom-left-radius: 15px;}
+.challangeNav:last-child {border-top-right-radius: 15px; border-bottom-right-radius: 15px;}
+.challangeNav:hover {background: #703b3b;}
+.challangeNav:active {opacity: 0.9;}
+
+.challangeSubHeader {
+	font-family: 'Lobster';
+	font-size: 180%;
+	color: #ea4c4c;
+}
+
+/* Challange stats, progress & a little diary */
+
+.challangeDesc, .challangeProgress, .challangeDiaryWrapper {margin-top: 10px;}
+.delayedChallangeDesc {margin: 0;}
+
+.challangeDesc, .challangeProgress {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.linkToArticleOfChallange {margin: 4px 0;}
+
+.stats {
+	display: flex;
+	align-items: center;
+	margin: 8px 0;
+}
+
+.statTitle {white-space: nowrap;}
+
+.statValue {
+	font-weight: bold;
+	font-size: 180%;
+	margin-left: 6px;
+	line-height: 0.75;
+}
+
+.statDate {font-size: 100%;}
+
+.startChallangeBtnWrap {display: flex; justify-content: center;}
+
+.challangeBtn {
+	background: #ea4c4c;
+	color: #faf4d0;
+	font-family: 'Lobster';
+	font-size: 125%;
+	padding: 13px 18px;
+	border-radius: 40px;
+	transition: 0.4s all;
+	margin-top: 20px;
+	border: 2px solid #ea4c4c;
+	cursor: pointer;
+}
+.challangeBtn:hover {background: #faf4d0; color: #ea4c4c;}
+.challangeBtn:active {opacity: 0.6;}
+
+/* Challange diary */
+
+.challangeDiaryWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.challangeDiary {
+	width: 350px;
+	max-height: 350px;
+	height: 300px;
+	border: 3px solid #ea4c4c;
+	margin-top: 10px;
+	overflow: auto;
+}
+
+.challangeDiary::-webkit-scrollbar {width: 12px; background-color: #ea4c4c;}
+.challangeDiary::-webkit-scrollbar-thumb {width: 12px; background-color: #703b3b;}
+
+.diaryNote {
+	border-bottom: 1px solid #ea4c4c;
+	padding: 8px;
+	color: #ea4c4c;
+	font-family: 'Open Sans Light';
+	cursor: pointer;
+	transition: 0.4s all;
+}
+.diaryNote:hover {color: #faf4d0; background: #ea4c4c;}
+.diaryNote:active {opacity: 0.7;}
+
+.linkToArticleOfChallange a {font-style: normal; color: #ea4c4c;}
+.linkToArticleOfChallange a:hover {text-decoration: underline;}
+.linkToArticleOfChallange a:active {font-weight: bold;}
+
+.loadMoreBtn {
+	background: transparent;
+	color: #ea4c4c;
+	font-size: 120%;
+	font-weight: bold;
+	border: 3px solid #ea4c4c;
+	padding: 12px 30px;
+	cursor: pointer;
+	margin-top: 40px;
+	transition: 0.4s all;
+}
+.loadMoreBtn:hover {background: #ea4c4c; color: #faf4d0;}
+.loadMoreBtn:active {opacity: 0.7;}
+
+/*** Create challange tab ***/
+
+.createChallange {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #faf4d0;
+	z-index: 1;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.challangeCreationForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.setChallangeName {text-align: center; width: 100%;}
+.setChallangeName input {width: calc(100% - 10px);}
+
+.setChallangeDetails {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.oneBorderInput {
+	border-bottom: 1px solid #ea4c4c;
+	padding: 0 5px 2px 5px;
+	min-width: 250px;
+	color: #ea4c4c;
+	background: transparent;
+	font-size: 85%;
+	margin: 15px 0;
+	font-family: 'Open Sans Light';
+}
+.oneBorderInput::placeholder {color: #ea4c4c;}
+.oneBorderInput::-moz-placeholder {color: #ea4c4c;}
+.oneBorderInput::-webkit-input-placeholder {color: #ea4c4c;}
+
+.rightCreateInputs {text-align: right; margin-left: 15px;}
+
+.leftCreateInputs{margin-right: 15px;}
+
+/*** Confirmation tab ***/
+
+#confirmationTab {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background: #faf4d0;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.confirm {text-align: center;}
+
+.confirmationQuestion {
+	font-size: 200%;
+	font-family: 'Open Sans';
+	color: #ea4c4c;
+	margin-bottom: 10px;
+	padding: 0 5px;
+}
+
+.confirmationControls button {
+	padding: 4px 8px;
+	font-family: 'Lobster';
+	font-size: 140%;
+	width: 85px;
+	cursor: pointer;
+	color: #faf4d0;
+	transition: 0.4s all;
+	margin: 15px;
+}
+.yes {background: #ea4c4c; border: 2px solid #ea4c4c;}
+.yes:hover {background: #faf4d0; color: #ea4c4c;}
+.no {background: #703b3b; border: 2px solid #703b3b;}
+.no:hover {background: #faf4d0; color: #703b3b;}
+.yes:active, .no:active {opacity: 0.6;}
+
+/*** Point progress tab ***/
+
+#pointProgressTab {
+	display: none;
+	z-index: 10;
+	background: #faf4d0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#pointProgressTab div {margin: 10px 0;}
+
+.pointProgressContent{padding: 0 5px;}
+
+.danger {
+	font-family: 'Open Sans';
+	font-weight: bold;
+	font-size: 90%;
+	color: #ea4c4c;
+}
+
+.progressQuestion {
+	font-family: 'Open Sans Light';
+	font-size: 140%;
+	color: #ea4c4c;
+}
+
+.leftMarginRadio {margin-left: 35px;}
+
+.progressLabel {font-family: 'Lobster'; font-size: 115%;}
+
+.progressInput, .progressTextarea {
+	background: transparent;
+	color: #ea4c4c;
+	font-family: 'Open Sans Light';
+	font-size: 90%;
+	border: 1px solid #ea4c4c;
+}
+
+.progressInput {padding: 3px 5px; width: 90%;}
+
+.progressTextarea {
+	height: 180px;
+	width: 90%;
+	padding: 5px;
+}
+.progressTextarea::placeholder, .progressInput::placeholder {color: #ea4c4c;}
+.progressTextarea::-moz-placeholder, .progressInput::-moz-placeholder {color: #ea4c4c;}
+.progressTextarea::-webkit-input-placeholder, .progressInput::-webkit-input-placeholder {color: #ea4c4c;}
+
+#pointProgress {margin: 0;}
+
+.cancelWritingDiaryNote {text-align: left; padding-left: 30px;}
+
+/*** User notes ***/
+
+.userNote, .noteInner {
+	background: #c14545;
+	border-radius: 5px;
+	color: #faf4d0;
+	font-family: 'Open Sans Light';
+}
+
+.userNote {
+	width: 100%;
+	max-width: 700px;
+	margin-top: 15px;
+}
+
+.invitationToLook {
+	padding: 7px 0;
+	font-size: 115%;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.4s all;
+}
+.invitationToLook:hover {background: #ea4c4c;}
+.invitationToLook:active {opacity: 0.7;}
+
+.noteInnerWrap {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 100;
+	display: none;
+	cursor: pointer;
+}
+
+.noteInner {
+	font-size: 90%;
+	padding: 10px;
+	width: 680px;
+	max-height: 280px;
+	cursor: default;
+}
+
+.noteControls {height: 25px; position: relative;}
+
+.noteLogo {
+	font-family: 'Lobster';
+	font-size: 20px;
+	text-decoration: underline;
+	color: #faf4d0;
+	font-style: normal;
+}
+
+.closeNote {
+	width: 20px;
+	height: 20px;
+	background: url("../../images/delete.png") center center no-repeat;
+	position: absolute;
+	top: 2px;
+	right: 15px;
+	cursor: pointer;
+	transition: 0.4s all;
+}
+.closeNote:hover {opacity: 0.6;}
+.closeNote:active {opacity: 0.4;}
+
+.noteContent {overflow: auto; max-height: 250px;}
+.noteContent::-webkit-scrollbar {width: 6px; background-color: #ea4c4c;}
+.noteContent::-webkit-scrollbar-thumb {width: 6px; background-color: #703b3b;}
+
+/*** Diary note tab ***/
+
+.diaryNoteWindow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #ea4c4c;
+	z-index: 10;
+	display: none;
+	justify-content: center;
+}
+
+.diaryNoteContent {
+	margin-top: 70px;
+	margin-bottom: 20px;
+	padding: 0 10px;
+	width: 85%;
+	color: #faf4d0;
+	line-height: 1.4;
+	overflow: auto;
+}
+
+.diaryNoteContent::-webkit-scrollbar {width: 6px; background-color: #faf4d0;}
+.diaryNoteContent::-webkit-scrollbar-thumb {width: 6px; background-color: #703b3b;}
+
+.dayAndDateOfDiaryNote {
+	font-size: 110%;
+	font-weight: bold;
+	margin-top: 10px;
+	font-family: 'Open Sans';
+}
+
+.success {color: #0f0;}
+.fail {color: #f00;}
+
+@media screen and (max-width: 820px) {
+	.challangeHeader {font-size: 200%;}
+}
+
+@media screen and (max-width: 700px) {
+	.invitationToLook {font-size: 100%;}
+
+	.oneBorderInput {min-width: 200px; font-size: 80%;}
+}
+
+@media screen and (max-width: 660px) {
+	#pointProgressTab div {margin: 5px 0;}
+
+	.progressPointHeader .h4_5 {font-size: 160%;}
+
+	.progressDanger {font-size: 80%;}
+	.progressQuestion {font-size: 125%;}
+
+	.leftMarginRadio {margin-left: 25px;}
+	.progressLabel {font-size: 110%;}
+
+	.progressTextarea {
+		height: 140px;
+		font-size: 80%;
+		padding: 3px 5px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.startChallange {
+		width: 35px;
+		height: 35px;
+		font-size: 200%;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.invitationToLook {font-size: 90%;}
+
+	.creationFormName .h3 {font-size: 180%;}
+
+	.setChallangeDetails {display: block; width: 100%;}
+
+	.oneBorderInput {width: calc(100% - 10px);}
+
+	.rightCreateInputs {margin-left: 0px;}
+	.leftCreateInputs{margin-right: 0;}
+
+}
+
+@media screen and (max-width: 500px) {
+	.challangeHeader {font-size: 160%;}
+
+	.challange {margin-bottom: 35px;}
+	.challange:last-child {margin-bottom: 0;}
+
+	#pointProgressTab div {margin: 3px 0;}
+	.progressPointHeader .h4_5 {font-size: 140%;}
+
+	.progressDanger {font-size: 70%;}
+	.progressQuestion {font-size: 105%;}
+
+	.leftMarginRadio {margin-left: 20px;}
+	.progressLabel {font-size: 100%;}
+}
+
+@media screen and (max-width: 413px) {
+	.progressTextarea {height: 100px;}
+}
+
+@media screen and (max-width: 400px) {
+	.challangeNav {padding: 8px; font-size: 80%;}
+
+	.challangeDiary {
+		width: 280px;
+		max-height: 280px;
+		height: 300px;
+		border: 3px solid #ea4c4c;
+		margin-top: 10px;
+		overflow: auto;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.creationFormName .h3 {font-size: 150%;}
+
+	.invitationToLook {font-size: 75%;}
+}
+
+@media screen and (max-height: 520px) {
+	.oneBorderInput {padding: 0 5px 2px 5px; margin: 7px 0;}
+
+	.createChallange .challangeBtn {
+		font-size: 115%;
+		padding: 7px 13px;
+		margin-top: 15px;
+	}
+}
+
+@media screen and (max-height: 475px) and (min-width: 661px) {
+	#pointProgressTab div {margin: 5px 0;}
+
+	.progressPointHeader .h4_5 {font-size: 160%;}
+
+	.progressDanger {font-size: 80%;}
+	.progressQuestion {font-size: 125%;}
+
+	.leftMarginRadio {margin-left: 25px;}
+	.progressLabel {font-size: 110%;}
+
+	.progressTextarea {
+		height: 140px;
+		font-size: 80%;
+		padding: 3px 5px;
+	}
+}
+
+@media screen and (max-height: 475px) and (max-width: 660px) {
+	#pointProgressTab div {margin: 3px 0;}
+	.progressPointHeader .h4_5 {font-size: 140%;}
+
+	.progressDanger {font-size: 70%;}
+	.progressQuestion {font-size: 105%;}
+
+	.leftMarginRadio {margin-left: 20px;}
+	.progressLabel {font-size: 100%;}
+}
+
+@media screen and (max-height: 475px) and (max-width: 600px) and (min-width: 414px) {
+	#pointProgressTab {align-items: flex-end;}
+	.pointProgressContent{margin-bottom: 30px;}
+}
+
+@media screen and (max-height: 440px) {
+	.progressHelperDangerText {display: none;}
+}
+
+@media screen and (max-height: 430px) {
+	.oneBorderInput {padding: 0 5px 2px 5px; margin: 5px 0;}
+
+	.createChallange .challangeBtn {margin-top: 10px;}
+}
+
+@media screen and (max-height: 370px) {
+	.pointProgressContent {font-size: 90%;}
+	.progressTextarea {height: 100px;}
+}
+
+@media screen and (max-height: 375px) and (max-width: 580px) {
+	.createChallange {align-items: flex-end;}
+	.challangeCreationForm {margin-bottom: 20px;}
+}
+
+@media screen and (max-height: 375px) and (max-width: 374px) {
+	.challangeCreationForm {margin-bottom: 40px;}
+}
+
+@media screen and (max-height: 355px) and (max-width: 374px) {
+	.challangeCreationForm {margin-bottom: 20px;}
+}
+
+@media screen and (max-height: 365px) and (min-width: 375px) and (max-width: 580px) {
+	.creationFormName .h3 {font-size: 145%;}
+
+	.invitationToLook {font-size: 75%;}
+
+	.userNote {margin-top: 8px;}
+}
